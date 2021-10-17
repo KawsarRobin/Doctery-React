@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Plastic Surgery",
+    "img": "https://doctery-demo.themesion.com/demo1/wp-content/uploads/sites/2/2020/06/service-01.jpg",
+    "details": "Plastic surgery is a surgical specialty involving the restoration, reconstruction, or alteration of the human body. It can be divided into two main categories: reconstructive surgery and cosmetic surgery. Reconstructive surgery includes craniofacial surgery, hand surgery, microsurgery, and the treatment of burns. While reconstructive surgery aims to reconstruct a part of the body or improve its functioning, cosmetic (or aesthetic) surgery aims at improving the appearance of it."
+  },
+  {
+    "id": 2,
+    "name": "Hematology",
+    "img": "https://doctery-demo.themesion.com/demo1/wp-content/uploads/sites/2/2020/06/service-02.jpg",
+    "details": "Hematology is practised by specialists in the field who deal with the diagnosis, treatment and overall management of people with blood disorders ranging from anemia to blood cancer.Physicians working in the field of hematology are called hematologists. Initially, hematologists complete a four-year medical degree and this is followed by three or four years in an internship or residency program."
+  },
+  {
+    "id": 3,
+    "name": "Neurology",
+    "img": "https://doctery-demo.themesion.com/demo1/wp-content/uploads/sites/2/2020/06/service-03.jpg",
+    "details": "Neurology is the branch of medicine that deals with disorders of the nervous system, which include the brain, blood vessels, muscles and nerves. The main areas of neurology are: the autonomic, central and peripheral nervous systems. A physician who works in the field of neurology is called a neurologist; a neurosurgeon treats neurological disorders via surgery.After 8 years of medical school, neurologists must complete postgraduate residency for 3 to 4 years. After completion of residency, some neurologists may continue on with fellowships in other areas of neurology. These may include behavioral neurology, clinical neurophysiology, epilepsy, interventional neurology or pain management."
+  },
+  {
+    "id": 4,
+    "name": "Gastrologic",
+    "img": "https://doctery-demo.themesion.com/demo1/wp-content/uploads/sites/2/2020/06/service-04.jpg",
+    "details": "Gastroenterologists are physicians trained in your gastrointestinal (GI) tract and liver to diagnose and treat issues. After medical school, they have 5 to 6 years of dedicated education. You might need to visit a health care gastroenterologist in Edmond, OK, with your issues in the esophagus, the tube connecting your stomach and abdomen, especially that is related to small and big intestine, liver, colon, rectum, bile ducts, gallbladder, pancreas, etc.A gastrologist is a physician specializing in stomach research, its structure, functions, and illnesses. Gastro is derived from the Greek word \"gaster\" referring to the stomach"
+  },
+  {
+    "id": 5,
+    "name": "Orthopedic",
+    "img": "https://doctery-demo.themesion.com/demo1/wp-content/uploads/sites/2/2020/06/service-05.jpg",
+    "details": "Orthopedics is a branch of medicine that focuses on the care of the musculoskeletal system. This system is made up of muscles and bones, as well as joints, ligaments, and tendons. A person who specializes in orthopedics is known as an orthopedist. Orthopedists use both surgical and nonsurgical approaches to treat a variety of musculoskeletal issues, such as sports injuries, joint pain, and back problems. This article provides an overview of orthopedics. It outlines the different conditions that orthopedists treat and what people can expect during an orthopedic appointment."
+  },
+  {
+    "id": 6,
+    "name": "Pharmacology",
+    "img": "https://doctery-demo.themesion.com/demo1/wp-content/uploads/sites/2/2020/06/service-06.jpg",
+    "details": "Pharmacology is a branch of medicine, biology and pharmaceutical sciences concerned with drug or medication action,[1] where a drug may be defined as any artificial, natural, or endogenous (from within the body) molecule which exerts a biochemical or physiological effect on the cell, tissue, organ, or organism (sometimes the word pharmacon is used as a term to encompass these endogenous and exogenous bioactive species). More specifically, it is the study of the interactions that occur between a living organism and chemicals that affect normal or abnormal biochemical function. If substances have medicinal properties, they are considered pharmaceuticals."
+  },
+  {
+    "id": 7,
+    "name": "Dermatology",
+    "img": "https://doctery-demo.themesion.com/demo1/wp-content/uploads/sites/2/2020/06/service-07.jpg",
+    "details": "Dermatologists are medical doctors. In New Zealand, after completing six years of medical school the dermatologist-to-be must complete a general medical training programme which usually takes 3 to 4 years. After a rigorous examination (FRACP) he or she is then eligible to enter advanced training. The advanced training in dermatology involves at least a further four years of intensive study, research and practice in a variety of approved training centres in New Zealand and overseas. The position is usually that of a registrar or training fellow who is closely supervised by experienced dermatologists."
+  },
+  {
+    "id": 8,
+    "name": "Cardiology",
+    "img": "https://doctery-demo.themesion.com/demo1/wp-content/uploads/sites/2/2020/06/service-08.jpg",
+    "details": "Cardiology is a medical specialty and a branch of internal medicine concerned with disorders of the heart. It deals with the diagnosis and treatment of such conditions as congenital heart defects, coronary artery disease, electrophysiology, heart failure and valvular heart disease. Subspecialties of the cardiology field include cardiac electrophysiology, echocardiography, interventional cardiology and nuclear cardiology."
+  },
+  {
+    "id": 9,
+    "name": "Pulmonology",
+    "img": "https://doctery-demo.themesion.com/demo1/wp-content/uploads/sites/2/2020/06/service-09.jpg",
+    "details": "Pulmonology is an area of medicine that focuses on the health of the respiratory system. Pulmonologists treat everything from asthma to tuberculosis.We believe in health equity — the equal opportunity for everyone to live their healthiest life. Volunteer your time to transform your community and join us in creating a healthier world — for everyone."
+  }
+]

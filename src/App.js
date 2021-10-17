@@ -1,6 +1,8 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import AboutUs from './components/AboutUs/AboutUs';
+import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
@@ -11,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Header></Header>
         <Switch>
           <Route exact path="/">
             <Home></Home>
