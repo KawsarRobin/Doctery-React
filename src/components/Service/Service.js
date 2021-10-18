@@ -9,8 +9,14 @@ const Service = (props) => {
       <Card className="rounded rounded-3 shadow-lg bg-light h-100">
         <Card.Img variant="top" src={img} className="p-3 rounded rounded-3" />
         <Card.Body>
-          <Card.Title>{name}</Card.Title>
-          <Card.Text>{details.slice(0, 150)}......</Card.Text>
+          <Card.Title>
+            {' '}
+            <h3>{name}</h3>{' '}
+          </Card.Title>
+          <Card.Text>
+            {' '}
+            <span>{details.slice(0, 150)}......</span>{' '}
+          </Card.Text>
           <Link to={`/service/${id}`}>
             <Button className="w-50" variant="outline-secondary">
               View Details
