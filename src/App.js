@@ -7,12 +7,16 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
 import Register from './components/Register/Register';
+import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import Services from './components/Services/Services';
 import AuthPorvider from './context/AuthPorvider';
 
 function App() {
+  const Styles = {
+    color: '#0e1133',
+  };
   return (
-    <div className="App">
+    <div style={Styles} className="App">
       <AuthPorvider>
         <Router>
           <Header></Header>
@@ -31,6 +35,9 @@ function App() {
             </Route>
             <Route path="/services">
               <Services></Services>
+            </Route>
+            <Route path="/service/:serviceId">
+              <ServiceDetails></ServiceDetails>
             </Route>
             <Route path="/about">
               <AboutUs></AboutUs>
