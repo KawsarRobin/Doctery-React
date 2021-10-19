@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
@@ -11,11 +11,36 @@ const Login = () => {
     handlePasswordChange,
     error,
     user,
+    setError,
+    setUser,
   } = useAuth();
+
+  const location = useLocation();
+  const history = useHistory();
+  const redirect_uri = location.state?.from || '/home';
+
+  const handleGoogleSignIn = () => {
+    signInUsingGoogle()
+      .then((result) => {
+        setError('');
+        setUser(result.user);
+        history.push(redirect_uri);
+      })
+      .catch((error) => setError(error.message));
+  };
+
+  const handleEmailSignIn = (e) => {
+    e.preventDefault();
+    signInUsingEmailAndPassword().then((result) => {
+      setError('');
+      setUser(result.user);
+      history.push(redirect_uri);
+    });
+  };
 
   return (
     <Container className="p-4 my-3 w-50 border shadow-lg border-2  rounded">
-      <Form onSubmit={signInUsingEmailAndPassword}>
+      <Form onSubmit={handleEmailSignIn}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>
             {' '}
@@ -46,11 +71,11 @@ const Login = () => {
         </Button>{' '}
         <br />
         <i
-          onClick={signInUsingGoogle}
-          class="fab fa-google fs-3 me-3 text-warning"
+          onClick={handleGoogleSignIn}
+          className="fab fa-google fs-3 me-3 text-warning"
         ></i>
         <i className="fab fa-facebook fs-3 me-3 text-primary"></i>
-        <i class="fab fa-github fs-3 me-3"></i>
+        <i className="fab fa-github fs-3 me-3"></i>
       </Form>
       <br />
       <Link className="text-decoration-none" to="register">

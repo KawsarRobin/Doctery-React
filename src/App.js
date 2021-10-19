@@ -10,6 +10,7 @@ import Register from './components/Register/Register';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import Services from './components/Services/Services';
 import AuthPorvider from './context/AuthPorvider';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
   const Styles = {
@@ -36,9 +37,9 @@ function App() {
             <Route path="/services">
               <Services></Services>
             </Route>
-            <Route path="/service/:serviceId">
+            <PrivateRoute path="/service/:serviceId">
               <ServiceDetails></ServiceDetails>
-            </Route>
+            </PrivateRoute>
             <Route path="/about">
               <AboutUs></AboutUs>
             </Route>

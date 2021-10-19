@@ -7,7 +7,12 @@ const Header = () => {
   const { user, logOut } = useAuth();
   return (
     <>
-      <Navbar bg="dark" variant="dark" collapseOnSelect expand="lg">
+      <Navbar
+        style={{ backgroundColor: '#74b9ff', fontWeight: '600' }}
+        variant="light"
+        collapseOnSelect
+        expand="lg"
+      >
         <Container>
           <Navbar.Brand href="#home">
             <img

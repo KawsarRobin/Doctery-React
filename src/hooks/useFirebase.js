@@ -25,48 +25,31 @@ const useFirebase = () => {
 
   /* Sign in with google */
   const signInUsingGoogle = () => {
-    setIsLoading(true);
     const googleProvider = new GoogleAuthProvider();
-
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        setError('');
-        console.log(result.user);
-        setUser(result.user);
-      })
-      .catch((error) => setError(error.message))
-      .finally(() => setIsLoading(false));
+    return signInWithPopup(auth, googleProvider);
   };
 
-  /* Register with email and password */
-
+  /* Get Email*/
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
 
+  /* Get Password*/
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
 
+  /* Get New Name */
   const handleNameChange = (e) => {
     setDisplayName(e.target.value);
   };
-  const registrationUsingEmail = (e) => {
-    setIsLoading(true);
-    e.preventDefault();
-    console.log(email, password);
 
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((result) => {
-        setError('');
-        setUser(result.user);
-        setName();
-      })
-      .catch((error) => setError(error.message))
-      .finally(() => setIsLoading(false));
+  /* Register With email and  password */
+  const registrationUsingEmail = (e) => {
+    return createUserWithEmailAndPassword(auth, email, password);
   };
 
-  /* Update name */
+  /* Update Display name */
   const setName = () => {
     updateProfile(auth.currentUser, { displayName: displayName }).then(
       (result) => {}
@@ -74,21 +57,11 @@ const useFirebase = () => {
   };
 
   /* Sign in with email and password to existing account */
-
   const signInUsingEmailAndPassword = (e) => {
-    setIsLoading(true);
-    e.preventDefault();
-    signInWithEmailAndPassword(auth, email, password)
-      .then((result) => {
-        setError('');
-        setUser(result.user);
-      })
-      .catch((error) => setError(error.message))
-      .finally(() => setIsLoading(false));
+    return signInWithEmailAndPassword(auth, email, password);
   };
 
   /* Observe user activities */
-
   useEffect(() => {
     const unsubscribed = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -102,15 +75,12 @@ const useFirebase = () => {
   }, []);
 
   /* Log out user */
-
   const logOut = () => {
-    setIsLoading(true);
     signOut(auth)
       .then(() => {
         setUser({});
       })
-      .catch((error) => setError(error.message))
-      .finally(() => setIsLoading(false));
+      .catch((error) => setError(error.message));
   };
 
   return {
@@ -124,6 +94,9 @@ const useFirebase = () => {
     signInUsingEmailAndPassword,
     handleNameChange,
     error,
+    setError,
+    setUser,
+    setName,
   };
 };
 
