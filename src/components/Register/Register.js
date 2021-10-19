@@ -44,7 +44,7 @@ const Register = () => {
   };
 
   return (
-    <Container className="p-5 my-5 w-50 border shadow-lg border-3 rounded">
+    <Container className="p-md-5 p-sm-2 my-md-5 my-sm-2 w-75 w-sm-100 border shadow-lg border-3 rounded">
       <Form onSubmit={handleRegister}>
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>
@@ -93,12 +93,18 @@ const Register = () => {
         <br />
         <br />
 
-        <i
-          onClick={handleGoogleSignIn}
-          className="fab fa-google fs-3 me-3 text-warning"
-        ></i>
-        <i className="fab fa-facebook fs-3 me-3 text-primary"></i>
-        <i className="fab fa-github fs-3 me-3"></i>
+        <span style={{ cursor: 'pointer' }}>
+          <i
+            onClick={handleGoogleSignIn}
+            className="fab fa-google fs-3 me-3 text-warning"
+          ></i>
+        </span>
+        <span style={{ cursor: 'pointer' }}>
+          <i className="fab fa-facebook fs-3 me-3 text-primary"></i>
+        </span>
+        <span style={{ cursor: 'pointer' }}>
+          <i className="fab fa-github fs-3 me-3"></i>
+        </span>
       </Form>
       <br />
       <Link className="text-decoration-none" to="/login">
