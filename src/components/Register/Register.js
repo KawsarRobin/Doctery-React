@@ -44,7 +44,7 @@ const Register = () => {
   };
 
   return (
-    <Container className="p-4 my-3 w-50 border shadow-lg border-3 rounded">
+    <Container className="p-5 my-5 w-50 border shadow-lg border-3 rounded">
       <Form onSubmit={handleRegister}>
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>

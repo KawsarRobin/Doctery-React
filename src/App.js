@@ -1,18 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import AboutUs from './components/AboutUs/AboutUs';
 import Contact from './components/Contact/Contact';
-import Doctors from './components/Doctors/Doctors';
-import FAQ from './components/FAQ/FAQ';
-import Header from './components/Header/Header';
-import Home from './components/Home/Home';
-import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
-import Register from './components/Register/Register';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
-import Services from './components/Services/Services';
 import AuthPorvider from './context/AuthPorvider';
+import AboutPage from './pages/AboutPage/AboutPage';
+import DoctorPage from './pages/DoctorPage/DoctorPage';
+import FaqPage from './pages/FaqPage/FaqPage';
+import HomePage from './pages/HomePage/HomePage';
+import LoginPage from './pages/LoginPage/LoginPage';
+import RegisterPage from './pages/LoginPage/RegisterPage';
+import ServicePage from './pages/ServicePage/ServicePage';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
@@ -20,40 +19,39 @@ function App() {
     color: '#0e1133',
   };
   return (
-    <div style={Styles} className="App">
+    <div style={Styles} className="App overflow-hidden">
       <AuthPorvider>
         <Router>
-          <Header></Header>
           <Switch>
             <Route exact path="/">
-              <Home></Home>
+              <HomePage></HomePage>
             </Route>
             <Route path="/home">
-              <Home></Home>
+              <HomePage></HomePage>
             </Route>
             <Route path="/login">
-              <Login></Login>
+              <LoginPage></LoginPage>
             </Route>
             <Route path="/register">
-              <Register></Register>
+              <RegisterPage></RegisterPage>
             </Route>
             <Route path="/services">
-              <Services></Services>
+              <ServicePage></ServicePage>
             </Route>
             <PrivateRoute path="/service/:serviceId">
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
             <Route path="/about">
-              <AboutUs></AboutUs>
+              <AboutPage></AboutPage>
             </Route>
             <Route path="/contact">
               <Contact></Contact>
             </Route>
             <Route path="/doctors">
-              <Doctors></Doctors>
+              <DoctorPage></DoctorPage>
             </Route>
             <Route path="/faq">
-              <FAQ></FAQ>
+              <FaqPage></FaqPage>
             </Route>
             <Route path="*">
               <NotFound></NotFound>

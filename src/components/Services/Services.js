@@ -13,7 +13,7 @@ const Services = () => {
 
   return (
     <div style={{ backgroundColor: '#c6e2ec' }}>
-      <Container className="py-5">
+      <Container className="py-5 overflow-hidden">
         <h2 className="text-center fw-bolder">
           Our <span className="text-danger">Treatments</span> For You
         </h2>
