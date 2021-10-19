@@ -13,9 +13,9 @@ const Footer = () => {
   const arrowIcon = <FontAwesomeIcon icon={faArrowRight} />;
 
   return (
-    <div style={{ backgroundColor: '#edeef3' }}>
+    <div style={{ backgroundColor: '#104161' }}>
       <Container>
-        <Row xs={1} md={4} className="p-5 g-3 h-100">
+        <Row xs={1} md={4} className="p-5 g-3 text-white">
           <Col>
             <h5>
               <img
@@ -50,7 +50,7 @@ const Footer = () => {
             <p>Contact</p>{' '}
           </Col>
           <Col>
-            <h5>Pages</h5>
+            <h5>About</h5>
             <p>Departments</p>
             <p>Partners</p>
             <p>News & blogs</p>
@@ -73,7 +73,7 @@ const Footer = () => {
         </Row>
       </Container>
       <hr />
-      <h6 className="text-center py-2 fw-bolder">
+      <h6 className="text-center py-2 fw-bolder text-white">
         <small>Copyright © 2022 Kawsar Robin All rights reserved.</small>
       </h6>
     </div>

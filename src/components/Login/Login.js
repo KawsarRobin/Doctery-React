@@ -67,7 +67,7 @@ const Login = () => {
           <Form.Check type="checkbox" label="Remember me" />
         </Form.Group>
         <Button className="w-25 my-3" variant="primary" type="submit">
-          Log in
+          Login
         </Button>{' '}
         <br />
         <i

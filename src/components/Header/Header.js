@@ -8,7 +8,11 @@ const Header = () => {
   return (
     <>
       <Navbar
-        style={{ backgroundColor: '#74b9ff', fontWeight: '600' }}
+        style={{
+          backgroundColor: '#4763b6',
+          fontWeight: '700',
+          color: 'white',
+        }}
         variant="light"
         collapseOnSelect
         expand="lg"
@@ -30,19 +34,22 @@ const Header = () => {
               <Nav.Link className="me-2" as={Link} to="/services">
                 Services
               </Nav.Link>
-              <Nav.Link className="me-2" as={Link} to="/about">
-                About Us
+              <Nav.Link className="me-2" as={Link} to="/doctors">
+                Doctors
               </Nav.Link>
-              <Nav.Link className="me-2" as={Link} to="/contact">
-                Contact
+              <Nav.Link className="me-2" as={Link} to="/about">
+                About
+              </Nav.Link>
+              <Nav.Link className="me-2" as={Link} to="/faq">
+                FAQ
               </Nav.Link>
               {user.email ? (
-                <Button className="me-2" onClick={logOut} variant="info">
+                <Button className="me-2" onClick={logOut} variant="secondary">
                   logOut
                 </Button>
               ) : (
                 <Nav.Link className="me-2" as={Link} to="/login">
-                  Log In
+                  Login
                 </Nav.Link>
               )}
               <Navbar.Text className="text-decoration-none">

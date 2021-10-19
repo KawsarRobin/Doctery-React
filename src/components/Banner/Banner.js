@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Banner = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: '#4763b6', fontWeight: '700' }}>
       <Container>
         <Row xs={1} md={2} className="gx-md-5 gx-sm-3 py-5">
           <Col className="pt-5 mb-5">
@@ -17,14 +17,14 @@ const Banner = () => {
             </h5>
             <br />
             <Link to="/login">
-              <Button className="shadow" variant="secondary">
+              <Button className="shadow" variant="success">
                 Book An Appointment
               </Button>
             </Link>
           </Col>
           <Col>
             <img
-              src="https://image.freepik.com/free-vector/flat-hand-drawn-patient-taking-medical-examination_52683-57829.jpg"
+              src="https://image.freepik.com/free-vector/doctor-professional-team-cartoon-art-illustration_56104-640.jpg"
               alt=""
               className=" img-fluid "
             />

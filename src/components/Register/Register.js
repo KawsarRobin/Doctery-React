@@ -88,7 +88,7 @@ const Register = () => {
           {user.email ? '' : <h4 className="text-danger my-2">{error}</h4>}
         </Form.Group>
         <Button className="w-25 my-3" variant="primary" type="submit">
-          Sign Up
+          SignUp
         </Button>
         <br />
         <br />

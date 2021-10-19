@@ -3,9 +3,9 @@ import { Button, Container } from 'react-bootstrap';
 
 const AboutUs = () => {
   return (
-    <div className="bg-light p-5">
-      <Container className="d-flex justify-content-evenly">
-        <div>
+    <div style={{ backgroundColor: '#ebeff0' }} className="p-5">
+      <Container className="d-flex justify-content-evenly ">
+        <div className="m-3">
           <img
             className=" rounded rounded-5"
             src={`http://medicare.bold-themes.com/clinic/wp-content/uploads/sites/2/2015/12/doktorka.png`}
@@ -23,7 +23,7 @@ const AboutUs = () => {
           </p>
           <p className="text-muted">
             Dr. Stephanie Wosniack is is dedicated to providing her patients
-            with the best possible care. We at MediCare are focused on helping
+            with the best possible care. We at DOCTERY are focused on helping
             you. After receiving successful care for various aches and pains
             over the years, Dr. Woshiack found her calling to help others get
             well.
@@ -33,8 +33,11 @@ const AboutUs = () => {
             alt=""
           />
           <br />
-          <Button className="shadow my-3" variant="outline-secondary">
-            Book Appointment
+          <Button
+            className="shadow my-3 rounded-pill"
+            variant="outline-secondary"
+          >
+            Appointment
           </Button>
         </div>
       </Container>
