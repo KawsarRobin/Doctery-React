@@ -26,7 +26,7 @@ const Header = () => {
             />
           </Navbar.Brand>
           <Navbar.Toggle />
-          <Nav className="ms-auto">
+          <Nav className="mx-auto">
             <Navbar.Collapse className="justify-content-end">
               <Nav.Link className="me-2" as={Link} to="/home">
                 Home

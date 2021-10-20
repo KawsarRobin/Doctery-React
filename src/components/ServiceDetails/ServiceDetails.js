@@ -26,25 +26,27 @@ const ServiceDetails = () => {
   }, [services]);
 
   return (
-    <Container className="p-5">
-      <Card className="rounded rounded-3 shadow-lg bg-light h-25">
-        <Card.Img
-          variant="top"
-          src={matchedService?.img}
-          className="p-3 rounded rounded-3"
-        />
-        <Card.Body>
-          <Card.Title>
-            {' '}
-            <h3>{matchedService?.name}</h3>{' '}
-          </Card.Title>
-          <Card.Text>{matchedService?.details}</Card.Text>
-          <Link to="/services">
-            <Button variant="outline-success">Book Appointment</Button>
-          </Link>
-        </Card.Body>
-      </Card>
-    </Container>
+    <div style={{ backgroundColor: '#c6e2ec' }}>
+      <Container className="p-5">
+        <Card className="rounded rounded-3 shadow-lg bg-light h-25">
+          <Card.Img
+            variant="top"
+            src={matchedService?.img}
+            className="p-3 rounded rounded-3"
+          />
+          <Card.Body>
+            <Card.Title>
+              {' '}
+              <h3>{matchedService?.name}</h3>{' '}
+            </Card.Title>
+            <Card.Text>{matchedService?.details}</Card.Text>
+            <Link to="/services">
+              <Button variant="outline-success">Book Appointment</Button>
+            </Link>
+          </Card.Body>
+        </Card>
+      </Container>
+    </div>
   );
 };
 
