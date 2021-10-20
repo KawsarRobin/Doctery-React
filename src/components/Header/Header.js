@@ -43,6 +43,9 @@ const Header = () => {
               <Nav.Link className="me-2" as={Link} to="/faq">
                 FAQ
               </Nav.Link>
+              <Nav.Link className="me-2" as={Link} to="/contact">
+                Contact
+              </Nav.Link>
               {user.email ? (
                 <Button className="me-2" onClick={logOut} variant="secondary">
                   logOut

@@ -31,11 +31,13 @@ const Login = () => {
 
   const handleEmailSignIn = (e) => {
     e.preventDefault();
-    signInUsingEmailAndPassword().then((result) => {
-      setError('');
-      setUser(result.user);
-      history.push(redirect_uri);
-    });
+    signInUsingEmailAndPassword()
+      .then((result) => {
+        setError('');
+        setUser(result.user);
+        history.push(redirect_uri);
+      })
+      .catch((error) => setError(error.message));
   };
 
   return (

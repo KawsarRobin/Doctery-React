@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
 const Doctor = (props) => {
-  const { cls, name, img } = props.doctor;
+  const { name, img } = props.doctor;
   return (
     <Col>
       <Card

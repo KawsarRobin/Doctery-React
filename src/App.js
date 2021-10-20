@@ -1,11 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import Contact from './components/Contact/Contact';
 import NotFound from './components/NotFound/NotFound';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import AuthPorvider from './context/AuthPorvider';
 import AboutPage from './pages/AboutPage/AboutPage';
+import ContactPage from './pages/ContactPage/ContactPage';
 import DoctorPage from './pages/DoctorPage/DoctorPage';
 import FaqPage from './pages/FaqPage/FaqPage';
 import HomePage from './pages/HomePage/HomePage';
@@ -45,7 +45,7 @@ function App() {
               <AboutPage></AboutPage>
             </Route>
             <Route path="/contact">
-              <Contact></Contact>
+              <ContactPage></ContactPage>
             </Route>
             <Route path="/doctors">
               <DoctorPage></DoctorPage>
